@@ -32,6 +32,8 @@ import { QrScanthreePage } from '../pages/qr-scanthree/qr-scanthree';
 import { CheckstudythreePage } from '../pages/checkstudythree/checkstudythree';
 import { SaveSickthreePage } from '../pages/save-sickthree/save-sickthree';
 import { StudentviewthreePage } from '../pages/studentviewthree/studentviewthree';
+import { IonicStorageModule } from '@ionic/storage';
+import { TestloginPage } from '../pages/testlogin/testlogin';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { StudentviewthreePage } from '../pages/studentviewthree/studentviewthree
     CheckstudythreePage,
     SaveSickthreePage,
     StudentviewthreePage,
+    TestloginPage,
 
 
     
@@ -70,7 +73,8 @@ import { StudentviewthreePage } from '../pages/studentviewthree/studentviewthree
     BrowserModule,
     HttpClientModule,
       NgxDatatableModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -101,6 +105,7 @@ import { StudentviewthreePage } from '../pages/studentviewthree/studentviewthree
     CheckstudythreePage,
     SaveSickthreePage,
     StudentviewthreePage,
+    TestloginPage,
 
 
 
